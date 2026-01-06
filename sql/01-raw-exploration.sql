@@ -1,24 +1,18 @@
--- 01_raw_exploration.sql
--- Purpose: Basic exploration + sanity checks for Part B
-SELECT COUNT(*) AS n_rows
+-- 01-raw-exploration.sql
+-- Basic exploration of Medicare Part B raw data
+
+SELECT
+  COUNT(*) AS row_count
 FROM `project-3-medicare.medicare_data.raw_data_b`;
 
--- Quick peek
-SELECT *
-FROM `project-3-medicare.medicare_data.raw_data_b`
-LIMIT 20;
-
--- Check for duplicates by HCPCS code (should usually be unique)
+-- Preview columns and values
 SELECT
-  HCPCS_Cd,
-  COUNT(*) AS n
+  *
 FROM `project-3-medicare.medicare_data.raw_data_b`
-GROUP BY HCPCS_Cd
-HAVING COUNT(*) > 1
-ORDER BY n DESC;
+LIMIT 50;
 
-
+-- Check for missing key identifiers
 SELECT
-  COUNTIF(HCPCS_Cd IS NULL) AS null_hcpcs_cd,
-  COUNTIF(HCPCS_Desc IS NULL) AS null_hcpcs_desc
+  COUNTIF(HCPCS_Cd IS NULL) AS missing_hcpcs,
+  COUNTIF(Brnd_Name IS NULL AND Gnrc_Name IS NULL) AS missing_drug_name
 FROM `project-3-medicare.medicare_data.raw_data_b`;
