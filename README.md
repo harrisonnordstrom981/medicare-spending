@@ -35,8 +35,7 @@ https://public.tableau.com/views/MedicareSpending_17678070188000/Dashboard2?:lan
 ## Tools Used
 - SQL (Google BigQuery)
 - Tableau Public
-- GitHub
-
+  
 ---
 
 ## Key Takeaways
