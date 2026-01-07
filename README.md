@@ -26,7 +26,7 @@ The Tableau dashboard includes:
 
 ## Interactive Dashboard
 View the interactive Tableau dashboard here:  
->>> https://public.tableau.com/views/MedicareSpending_17678070188000/Dashboard2?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link <<<
+https://public.tableau.com/views/MedicareSpending_17678070188000/Dashboard2?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 ---
 
