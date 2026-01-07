@@ -19,8 +19,8 @@ The Tableau dashboard includes:
 - **Top 10 Drugs by Spending** – Ranked bar chart
 - **Median Price per Unit Over Time** – Trend analysis using medians to reduce outlier influence
 
-Static screenshots of key visuals are stored in the `visuals/` folder.
-<img width="799" height="495" alt="image" src="https://github.com/user-attachments/assets/36340a1d-5e77-45a2-8c60-898a5ec0967d" />
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/36340a1d-5e77-45a2-8c60-898a5ec0967d" />
+
 
 ---
 
